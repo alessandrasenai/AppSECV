@@ -11,10 +11,13 @@
     <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="10dp"
-        android:layout_marginTop="10dp"
-        android:scaleType="centerCrop"
-        android:src="@drawable/senai" />
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="13dp"
+        android:layout_marginRight="17dp"
+        android:scaleType="centerInside"
+        android:src="@drawable/senai"
+        android:layout_alignParentRight="true" />
 
 
     <TextView
@@ -29,21 +32,37 @@
         android:text="NIF:"
         android:textSize="50px"
         android:layout_alignParentLeft="true"
-        android:layout_marginLeft="22dp" />
+        android:layout_marginLeft="22dp"
+        android:textColor="@color/preto"
+        />
 
 
     <TextView
         android:id="@+id/SENHA"
-        android:layout_width="77dp"
+        android:layout_width="wrap_content"
         android:layout_height="46dp"
         android:layout_alignLeft="@+id/NIF"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/NIF"
         android:layout_marginBottom="211dp"
+        android:layout_marginLeft="-10dp"
+        android:layout_marginStart="-10dp"
         android:gravity="left"
         android:text="SENHA:"
-        android:textSize="50px" />
+        android:textSize="50px"
+        android:textColor="@color/preto"
+        />
 
+    <EditText
+        android:id="@+id/edtTEXT1"
+        android:layout_width="239dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/edtTEXT2"
+        android:layout_alignStart="@+id/edtTEXT2"
+        android:singleLine="true"
+        android:textColor="@color/preto"
+        android:layout_alignTop="@+id/NIF"
+        android:layout_gravity="center_horizontal" />
 
     <EditText
         android:id="@+id/edtTEXT2"
@@ -54,32 +73,22 @@
         android:layout_gravity="center_horizontal"
         android:layout_marginEnd="35dp"
         android:layout_alignParentRight="true"
-        android:layout_marginRight="35dp" />
-
-
-    <EditText
-        android:id="@+id/edtTEXT1"
-        android:layout_width="239dp"
-        android:layout_height="wrap_content"
-        android:layout_alignLeft="@+id/edtTEXT2"
-        android:layout_alignStart="@+id/edtTEXT2"
-        android:layout_alignTop="@+id/NIF"
-        android:layout_gravity="center_horizontal" />
-
+        android:singleLine="true"
+        android:textColor="@color/preto"
+        android:layout_marginRight="35dp"
+        tools:ignore="DuplicateIds" />
 
     <Button
         android:id="@+id/bt"
         android:layout_width="69dp"
         android:layout_height="wrap_content"
-        android:layout_alignEnd="@+id/edtTEXT1"
+        android:layout_alignEnd="@+id/edtTEXT2"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/edtTEXT1"
         android:layout_gravity="clip_vertical"
-        android:layout_marginBottom="17dp"
-        android:layout_marginEnd="-4dp"
-        android:layout_marginRight="-4dp"
+        android:layout_marginBottom="21dp"
+        android:onClick="abrirHome"
         android:text="Login"
-        android:onClick="pàgina2"/>
+        android:layout_alignRight="@+id/edtTEXT2" />
 
 
 

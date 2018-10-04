@@ -1,8 +1,9 @@
 package br.com.rafaelleme.senai.appsecv;
 
-import android.support.v7.app.ActionBar;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -13,9 +14,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void pagina2 (View view){
+    public void abrirHome(View view){
 
-        Intent intent = new Intent(this, SegundaActivity.class);
+        Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
 }
