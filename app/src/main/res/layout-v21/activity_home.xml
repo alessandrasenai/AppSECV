@@ -7,7 +7,6 @@
     tools:context=".HomeActivity">
 
 
-
     <Button
         android:id="@+id/bt"
         android:layout_width="69dp"
@@ -22,6 +21,7 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         android:layout_alignRight="@+id/edtTEXT2"/>
+    
 
 
 
