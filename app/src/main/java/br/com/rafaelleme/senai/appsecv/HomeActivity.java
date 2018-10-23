@@ -17,9 +17,9 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         setUpToolbar();
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionBar.setHomeAsUpIndicator(R.drawable.icon_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        drawerLayout = findViewById(R.id.drawer_layout);
+        //drawerLayout = findViewById(R.id.include_toolbar_xml);
     }
         private void setUpToolbar() {
             Toolbar toolbar = findViewById(R.id.toolbar);
