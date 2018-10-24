@@ -6,7 +6,7 @@
         <item name="colorPrimary">@color/colorPrimary</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
         <item name="colorAccent">@color/colorAccent</item>
-        <item name="colorControlNormal">#ff0000</item>
+        <item name="colorControlNormal">#e40707</item>
         <item name="colorControlHighlight">@color/preto</item>
 
 
