@@ -15,14 +15,10 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
-    public void abrirHome(View view){
+    public void abrirHome(View view) {
 
         Intent intent = new Intent(this, HomeActivity.class);
         startActivity(intent);
     }
+
 }
-
-
-
-
-

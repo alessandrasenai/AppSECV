@@ -4,19 +4,25 @@
         <item
             android:id="@+id/itemUm"
             android:icon="@mipmap/ic_launcher"
-            android:title="Tela um"
+            android:title="Estatística"
             android:checked="true"/>
 
         <item
             android:id="@+id/itemDois"
             android:icon="@mipmap/ic_launcher"
-            android:title="Tela Dois"
+            android:title="Gerenciar Empresas"
             />
 
         <item
             android:id="@+id/itemTres"
             android:icon="@android:drawable/ic_dialog_alert"
-            android:title="Tela Três"
+            android:title="Ajuda"
+              />
+
+        <item
+            android:id="@+id/itemQuatro"
+            android:title="Sair"
             />
+
     </group>
 </menu>

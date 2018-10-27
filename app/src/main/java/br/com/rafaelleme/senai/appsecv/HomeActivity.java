@@ -17,9 +17,10 @@ public class HomeActivity extends AppCompatActivity {
         setContentView(R.layout.activity_home);
         setUpToolbar();
         ActionBar actionBar = getSupportActionBar();
-        actionBar.setHomeAsUpIndicator(R.drawable.icon_menu);
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
-        //drawerLayout = findViewById(R.id.include_toolbar_xml);
+        actionBar.setTitle("Estatísticas");
+        drawerLayout = findViewById(R.id.drawer_layout);
     }
         private void setUpToolbar() {
             Toolbar toolbar = findViewById(R.id.toolbar);

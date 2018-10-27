@@ -13,15 +13,15 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:paddingTop="16dp"
-        android:scr="@android:drawable/ic_action_name"/>
-
+        android:src="@android:drawable/sym_def_app_icon"/>
 
 
 
     <TextView android:id="@+id/tNome"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:textColor="@android:color/white"
         android:text=""/>
+
+
 
 </LinearLayout>
