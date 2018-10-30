@@ -9,6 +9,7 @@
         <item name="colorControlNormal">#e40707</item>
         <item name="colorControlHighlight">@color/preto</item>
 
+
     </style>
 
 </resources>
