@@ -4,20 +4,20 @@
     <group android:checkableBehavior="single">
         <item
             android:id="@+id/itemUm"
-            android:icon="@drawable/ic_chart"
+            android:icon="@drawable/ic_chart1"
             android:title="Estatística"
             android:checked="true"
             />
         <item
             android:id="@+id/itemDois"
-            android:icon="@mipmap/ic_launcher"
-            android:textColor="@android:color/white"
+            android:icon="@drawable/ic_domain"
             android:title="Gerenciar Empresas"
             />
 
         <item
             android:id="@+id/itemTres"
-            android:icon="@android:drawable/ic_dialog_alert"
+            android:icon="@drawable/ic_helpoutline"
+            android:onClick="showPopup"
             android:title="Ajuda"
               />
         <item
