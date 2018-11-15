@@ -20,7 +20,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
 
     @Override
-    public boolean onNavigationItemSelected(@NonNull MenuItem item) {
+    public boolean onNavigationItemSelected(MenuItem item) {
         return false;
     }
 
@@ -92,36 +92,36 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
             return super.onOptionsItemSelected(menu);
         }
 
-        private void exemplo_simples () {
-            //Cria o gerador do AlertDialog
-            AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        //*private void exemplo_simples () {
+       //*     //Cria o gerador do AlertDialog
+       //*     AlertDialog.Builder builder = new AlertDialog.Builder(this);
             
-            builder.settitle("Ajuda");
+       //*     builder.settitle("Ajuda");
             //define a mensagem
-            builder.setMessage("Qualifique este software");
+         //*   builder.setMessage("Qualifique este software");
             //define um botão como positivo
-            builder.setPositiveButton("Positivo", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface arg0, int arg1) {
-                    Toast.makeText(HomeActivity.this, "positivo=" + arg1, Toast.LENGTH_SHORT).show();
-                }
-            });
-            //define um botão como negativo.
-            builder.setNegativeButton("Negativo", new DialogInterface.OnClickListener() {
-                public void onClick(DialogInterface arg0, int arg1) {
-                    Toast.makeText(Activity_main.this, "negativo=" + arg1, Toast.LENGTH_SHORT).show();
-                }
-            });
-            //cria o AlertDialog
-            ajuda = builder.create();
+          //*  builder.setPositiveButton("Positivo", new DialogInterface.OnClickListener() {
+            //*    public void onClick(DialogInterface arg0, int arg1) {
+              //*      Toast.makeText(HomeActivity.this, "positivo=" + arg1, Toast.LENGTH_SHORT).show();
+              //*  }
+          //*  });
+          //*  //define um botão como negativo.
+         //*   builder.setNegativeButton("Negativo", new DialogInterface.OnClickListener() {
+          //*      public void onClick(DialogInterface arg0, int arg1) {
+              //*      Toast.makeText(Activity_main.this, "negativo=" + arg1, Toast.LENGTH_SHORT).show();
+              //*  }
+          //*  });
+          //*  //cria o AlertDialog
+           //* ajuda = builder.create();
             //Exibe
-            alerta.show();
+          //**  alerta.show();
         }
 
 
-    }
 
 
-}
+
+
 
 
 
