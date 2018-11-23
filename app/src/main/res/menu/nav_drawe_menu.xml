@@ -17,13 +17,9 @@
             />
 
         <item
-            android:id="@+id/itemTres"
+            android:id="@+id/itemAjuda"
             android:icon="@drawable/ic_helpoutline"
             android:title="Ajuda"/>
-
-
-            **/android:onClick="showPopup"/**
-
 
         <item
             android:id="@+id/itemQuatro"
