@@ -20,6 +20,8 @@
             android:id="@+id/itemAjuda"
             android:icon="@drawable/ic_helpoutline"
             android:title="Ajuda"/>
+           *// android:theme="@android:style/Theme.Holo.DialogWhenLarge"
+
 
         <item
             android:id="@+id/itemQuatro"

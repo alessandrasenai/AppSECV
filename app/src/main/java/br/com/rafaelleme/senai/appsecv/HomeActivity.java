@@ -27,23 +27,23 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     NavigationView navigationView;
 
 
-    @Override
-    public void mostrarajuda();{
+@Override
+        public Dialog onCreateDialog ; mostrarajuda ();
 
         {
-            LayoutInflater li = getLayoutInflater();
+           LayoutInflater li = getLayoutInflater();
             View view = li.inflate(R.layout.ajuda_dialog, null);
             view.findViewById(R.id.edtTEXT1).setOnClickListener(new View.OnClickListener() {
 
                 @Override
                 public void onClick(View v) {
                     Toast.makeText(HomeActivity.this, "ajuda", Toast.LENGTH_SHORT).show();
-                    mostrarajuda();
+
                 }
             });
 
         }
-        }
+
 
         @Override
         public boolean onNavigationItemSelected(MenuItem item) {
