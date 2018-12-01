@@ -49,60 +49,60 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
-            @Override
-            public boolean onNavigationItemSelected(MenuItem item) {
+    @Override
+    public boolean onNavigationItemSelected(MenuItem item) {
 
-                switch (item.getItemId()) {
-                    case R.id.itemUm:
-                        Toast.makeText(this, "Abriu item 1", Toast.LENGTH_SHORT).show();
-                        break;
+        switch (item.getItemId()) {
+            case R.id.itemUm:
+                Toast.makeText(this, "Abriu item 1", Toast.LENGTH_SHORT).show();
+                break;
 
-                    case R.id.itemAjuda:
-                        mostrarAjuda();
-                        break;
+            case R.id.itemAjuda:
+                mostrarAjuda();
+                break;
 
-                    case R.id.itemSair:
-
-                        break;
-
-                }
-
-                return false;
-            }
-
-
-            @Override
-            protected void onCreate(Bundle savedInstanceState) {
-                super.onCreate(savedInstanceState);
-                setContentView(R.layout.activity_home);
-                setUpToolbar();
-                ActionBar actionBar = getSupportActionBar();
-                actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
-                actionBar.setDisplayHomeAsUpEnabled(true);
-                actionBar.setTitle("Estatísticas");
-
-                navigationView = findViewById(R.id.navView);
-                navigationView.setNavigationItemSelectedListener(this);
-
-                drawerLayout = findViewById(R.id.drawer_layout);
-            }
-
-
-            private void setUpToolbar() {
-                Toolbar toolbar = findViewById(R.id.toolbar);
-                setSupportActionBar(toolbar);
-
-            }
-
-            @Override
-            public boolean onOptionsItemSelected(MenuItem item) {
-                if (item.getItemId() == android.R.id.home) {
-                    drawerLayout.openDrawer(GravityCompat.START);
-                }
-                return super.onOptionsItemSelected(item);
-            }
-
+            case R.id.itemSair:
+                finish();
+                break;
 
         }
+
+        return false;
+    }
+
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_home);
+        setUpToolbar();
+        ActionBar actionBar = getSupportActionBar();
+        actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
+        actionBar.setDisplayHomeAsUpEnabled(true);
+        actionBar.setTitle("Estatísticas");
+
+        navigationView = findViewById(R.id.navView);
+        navigationView.setNavigationItemSelectedListener(this);
+
+        drawerLayout = findViewById(R.id.drawer_layout);
+    }
+
+
+    private void setUpToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);
+
+    }
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            drawerLayout.openDrawer(GravityCompat.START);
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+
+}
 
 
