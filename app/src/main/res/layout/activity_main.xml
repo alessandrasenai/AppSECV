@@ -75,7 +75,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
-        android:digits="1234567890.,"
+        android:digits="sn1234567890.,"
         android:inputType="numberDecimal"
         android:maxLength="20"
         android:singleLine="true"
