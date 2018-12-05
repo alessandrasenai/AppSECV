@@ -5,13 +5,13 @@
     tools:context="com.example.application.showPopup_nav_drawe_menu.xml">
     <group android:checkableBehavior="single">
         <item
-            android:id="@+id/itemUm"
+            android:id="@+id/estatistica"
             android:icon="@drawable/ic_chart1"
             android:title="Estatística"
             android:checked="true"
             />
         <item
-            android:id="@+id/itemDois"
+            android:id="@+id/gerenciar"
             android:icon="@drawable/ic_domain"
             android:title="Gerenciar Empresas"
             />

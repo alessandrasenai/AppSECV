@@ -1,6 +1,8 @@
 package br.com.rafaelleme.senai.appsecv;
 
 import android.app.Activity;
+
+import android.app.FragmentManager;
 import android.app.PendingIntent;
 import android.content.ClipData;
 import android.content.DialogInterface;
@@ -14,6 +16,7 @@ import android.support.v7.app.ActionBar;
 import android.support.v7.app.AlertDialog;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
+import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
@@ -21,12 +24,15 @@ import android.widget.Toast;
 
 import static android.support.v7.app.AlertDialog.*;
 import static br.com.rafaelleme.senai.appsecv.R.id.action_bar;
-import static br.com.rafaelleme.senai.appsecv.R.id.itemUm;
+import static br.com.rafaelleme.senai.appsecv.R.id.gerenciar;
+
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {
     DrawerLayout drawerLayout;
     NavigationView navigationView;
     AlertDialog alertDialog;
+    FragmentManager fragmentManager;
+    ActionBar actionBar;
 
 
     public void mostrarAjuda() {
@@ -49,12 +55,28 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     }
 
 
+
+
+    public void mostrarEstatistica(){
+        Intent intent = new Intent(this, HomeActivity.class);
+        startActivity(intent);
+    }
+
+    public void mostrarEmpresas(){
+        fragmentManager.beginTransaction().replace(R.id.fragment,new BlankFragment()).commit();
+        actionBar.setTitle("Empresas");
+    }
+
     @Override
     public boolean onNavigationItemSelected(MenuItem item) {
 
         switch (item.getItemId()) {
-            case R.id.itemUm:
-                Toast.makeText(this, "Abriu item 1", Toast.LENGTH_SHORT).show();
+            case R.id.estatistica:
+                mostrarEstatistica();
+                break;
+
+            case R.id.gerenciar:
+                mostrarEmpresas();
                 break;
 
             case R.id.itemAjuda:
@@ -63,9 +85,12 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
             case R.id.itemSair:
                 finish();
+
                 break;
 
         }
+
+        drawerLayout.closeDrawer(Gravity.LEFT);
 
         return false;
     }
@@ -76,7 +101,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
         setUpToolbar();
-        ActionBar actionBar = getSupportActionBar();
+         actionBar = getSupportActionBar();
         actionBar.setHomeAsUpIndicator(R.drawable.ic_menu);
         actionBar.setDisplayHomeAsUpEnabled(true);
         actionBar.setTitle("Estatísticas");
@@ -85,13 +110,13 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
         navigationView.setNavigationItemSelectedListener(this);
 
         drawerLayout = findViewById(R.id.drawer_layout);
+        fragmentManager = getFragmentManager();
     }
 
 
     private void setUpToolbar() {
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
-
     }
 
     @Override
