@@ -1,4 +1,4 @@
-package entity;
+package br.com.rafaelleme.senai.appsecv.entity;
 
 public class Usuario {
 

@@ -1,14 +1,8 @@
-package br.com.rafaelleme.senai.appsecv;
-
-import android.app.Activity;
+package br.com.rafaelleme.senai.appsecv.activity;
 
 import android.app.FragmentManager;
-import android.app.PendingIntent;
-import android.content.ClipData;
-import android.content.DialogInterface;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.annotation.NonNull;
 import android.support.design.widget.NavigationView;
 import android.support.v4.view.GravityCompat;
 import android.support.v4.widget.DrawerLayout;
@@ -20,11 +14,9 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Toast;
 
-import static android.support.v7.app.AlertDialog.*;
-import static br.com.rafaelleme.senai.appsecv.R.id.action_bar;
-import static br.com.rafaelleme.senai.appsecv.R.id.gerenciar;
+import br.com.rafaelleme.senai.appsecv.BlankFragment;
+import br.com.rafaelleme.senai.appsecv.R;
 
 
 public class HomeActivity extends AppCompatActivity implements NavigationView.OnNavigationItemSelectedListener {

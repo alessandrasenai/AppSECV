@@ -35,6 +35,7 @@ return inflater.inflate(R.layout.fragment_blank, container, false);
     public void onViewCreated(View view, @Nullable Bundle savedInstanceState) {
         super.onViewCreated(view, savedInstanceState);
         webView = view.findViewById(R.id.webView);
-        webView.loadUrl("http://10.87.202.155:8080/secv/APP/empresasAPP.xhtml");
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("http://10.87.202.155:8080/secv/APP/graficosAPP.xhtml");
     }
 }
