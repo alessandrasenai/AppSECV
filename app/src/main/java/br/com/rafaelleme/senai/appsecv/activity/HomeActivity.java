@@ -14,8 +14,10 @@ import android.view.Gravity;
 import android.view.LayoutInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.webkit.WebView;
 
 import br.com.rafaelleme.senai.appsecv.BlankFragment;
+import br.com.rafaelleme.senai.appsecv.EstatisticaFragment;
 import br.com.rafaelleme.senai.appsecv.R;
 
 
@@ -25,6 +27,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
     AlertDialog alertDialog;
     FragmentManager fragmentManager;
     ActionBar actionBar;
+    private WebView webView;
 
 
     public void mostrarAjuda() {
@@ -50,8 +53,8 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
 
     public void mostrarEstatistica(){
-        Intent intent = new Intent(this, HomeActivity.class);
-        startActivity(intent);
+       fragmentManager.beginTransaction().replace(R.id.fragment, new EstatisticaFragment()).commit();
+       actionBar.setTitle("Estatisticas");
     }
 
     public void mostrarEmpresas(){
@@ -103,6 +106,10 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         drawerLayout = findViewById(R.id.drawer_layout);
         fragmentManager = getFragmentManager();
+
+        webView = findViewById(R.id.webView);
+        webView.getSettings().setJavaScriptEnabled(true);
+        webView.loadUrl("http://10.87.202.155:8080/secv/APP/graficosAPP.xhtml");
     }
 
 

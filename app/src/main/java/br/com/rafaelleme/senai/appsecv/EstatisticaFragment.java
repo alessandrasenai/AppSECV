@@ -13,12 +13,12 @@ import android.webkit.WebView;
 /**
  * A simple {@link Fragment} subclass.
  */
-public class BlankFragment extends Fragment {
+public class EstatisticaFragment extends Fragment {
 
 
     private WebView webView;
 
-    public BlankFragment() {
+    public EstatisticaFragment() {
         // Required empty public constructor
     }
 
@@ -27,7 +27,7 @@ public class BlankFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_blank, container, false);
+        return inflater.inflate(R.layout.fragment_estatistica, container, false);
 
     }
 
@@ -36,6 +36,6 @@ public class BlankFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         webView = view.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://10.87.202.155:8080/secv/APP/empresasAPP.xhtml");
+        webView.loadUrl("http://10.87.202.155:8080/secv/APP/graficosAPP.xhtml");
     }
 }

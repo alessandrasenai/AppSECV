@@ -49,6 +49,8 @@ public class MainActivity extends AppCompatActivity {
                             if (usuarioADM.getSenha().equals(senha)) {
                                 Intent intent = new Intent(MainActivity.this, HomeActivity.class);
                                 startActivity(intent);
+                            } else {
+                                Toast.makeText(MainActivity.this, "Usuário/Senha incorretos!", Toast.LENGTH_SHORT).show();
                             }
                         } else {
                             Toast.makeText(MainActivity.this, "Usuário/Senha incorretos!", Toast.LENGTH_SHORT).show();
