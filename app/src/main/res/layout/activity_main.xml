@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context="br.com.rafaelleme.senai.appsecv.MainActivity">
+    tools:context="br.com.rafaelleme.senai.appsecv.activity.MainActivity">
 
     <ImageView
         android:id="@+id/imageView"
@@ -60,10 +60,10 @@
         android:textColor="@color/preto"
         android:textSize="50px"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTEXT1" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNif" />
 
     <EditText
-        android:id="@+id/edtTEXT1"
+        android:id="@+id/edtNif"
         android:layout_width="306dp"
         android:layout_height="wrap_content"
         android:layout_alignLeft="@+id/edtTEXT2"
@@ -75,7 +75,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="100dp"
-        android:digits="1234567890.,"
+        android:digits="sn1234567890.,"
         android:inputType="numberDecimal"
         android:maxLength="20"
         android:singleLine="true"
@@ -87,7 +87,7 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
-        android:id="@+id/edtTEXT2"
+        android:id="@+id/edtSenha"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
@@ -101,15 +101,15 @@
         app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toEndOf="@+id/SENHA"
         android:inputType="textPassword"
-        app:layout_constraintTop_toBottomOf="@+id/edtTEXT1" />
+        app:layout_constraintTop_toBottomOf="@+id/edtNif" />
 
     <Button
-        android:id="@+id/bt"
+        android:id="@+id/btLogin"
         android:layout_width="123dp"
         android:layout_height="34dp"
-        android:layout_alignEnd="@+id/edtTEXT2"
+        android:layout_alignEnd="@+id/edtSenha"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/edtTEXT2"
+        android:layout_alignRight="@+id/edtSenha"
         android:layout_gravity="clip_vertical"
         android:layout_marginBottom="160dp"
         android:layout_marginEnd="16dp"
@@ -124,7 +124,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.518"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edtTEXT2" />
+        app:layout_constraintTop_toBottomOf="@+id/edtSenha" />
 
 
 </android.support.constraint.ConstraintLayout>
