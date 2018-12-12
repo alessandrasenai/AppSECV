@@ -9,7 +9,7 @@
 
     <TextView
         android:id="@+id/Email"
-        android:layout_width="360dp"
+        android:layout_width="300dp"
         android:layout_height="52dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -29,7 +29,7 @@
 
     <TextView
         android:id="@+id/Telefone"
-        android:layout_width="357dp"
+        android:layout_width="306dp"
         android:layout_height="55dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
@@ -56,9 +56,7 @@
         android:id="@+id/btFechar"
         android:layout_width="61dp"
         android:layout_height="34dp"
-        android:layout_alignEnd="@+id/edtTEXT2"
         android:layout_alignParentBottom="true"
-        android:layout_alignRight="@+id/edtTEXT2"
         android:layout_gravity="clip_vertical"
         android:layout_marginBottom="16dp"
         android:layout_marginEnd="36dp"
