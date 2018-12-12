@@ -36,6 +36,6 @@ public class BlankFragment extends Fragment {
         super.onViewCreated(view, savedInstanceState);
         webView = view.findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://10.87.202.155:8080/secv/APP/empresasAPP.xhtml");
+        webView.loadUrl("http://10.87.210.5/secv/APP/empresasAPP.xhtml");
     }
 }

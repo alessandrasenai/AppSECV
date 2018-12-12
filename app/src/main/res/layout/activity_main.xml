@@ -17,7 +17,7 @@
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="160dp"
-        android:src="@drawable/logo"
+        android:src="@drawable/logo2"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -88,7 +88,6 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="168dp"
         android:digits="sn1234567890.,"
-        android:inputType="numberDecimal"
         android:maxLength="20"
         android:singleLine="true"
         android:textColor="@color/preto"

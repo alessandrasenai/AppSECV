@@ -109,7 +109,7 @@ public class HomeActivity extends AppCompatActivity implements NavigationView.On
 
         webView = findViewById(R.id.webView);
         webView.getSettings().setJavaScriptEnabled(true);
-        webView.loadUrl("http://10.87.202.155:8080/secv/APP/graficosAPP.xhtml");
+        webView.loadUrl("http://10.87.210.5/secv/APP/graficosAPP.xhtml");
     }
 
 
