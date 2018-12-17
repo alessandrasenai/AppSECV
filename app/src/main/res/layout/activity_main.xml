@@ -41,17 +41,18 @@
         app:layout_constraintTop_toTopOf="parent" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/NIF"
         android:layout_width="45dp"
-        android:layout_height="wrap_content"
+        android:layout_height="47dp"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="176dp"
+        android:layout_marginTop="168dp"
         android:gravity="left"
+        android:src="@drawable/usuario"
         android:text="NIF:"
         android:textColor="@color/preto"
         android:textSize="50px"
@@ -59,17 +60,18 @@
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
 
-    <TextView
+    <ImageView
         android:id="@+id/SENHA"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
+        android:layout_width="46dp"
+        android:layout_height="42dp"
         android:layout_alignLeft="@+id/NIF"
         android:layout_alignParentBottom="true"
         android:layout_alignStart="@+id/NIF"
         android:layout_marginLeft="16dp"
         android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="28dp"
         android:gravity="left"
+        android:src="@drawable/senha"
         android:text="SENHA:"
         android:textColor="@color/preto"
         android:textSize="50px"
@@ -78,7 +80,7 @@
 
     <EditText
         android:id="@+id/edtNif"
-        android:layout_width="306dp"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/NIF"
         android:layout_gravity="center_horizontal"
@@ -88,30 +90,32 @@
         android:layout_marginStart="8dp"
         android:layout_marginTop="168dp"
         android:digits="sn1234567890.,"
+        android:hint="Insira seu Nif"
         android:maxLength="20"
         android:singleLine="true"
         android:textColor="@color/preto"
         android:theme="@style/Theme.AppCompat.Light"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.717"
         app:layout_constraintStart_toEndOf="@+id/NIF"
         app:layout_constraintTop_toBottomOf="@+id/imageView" />
 
     <EditText
         android:id="@+id/edtSenha"
-        android:layout_width="0dp"
+        android:layout_width="282dp"
         android:layout_height="wrap_content"
         android:layout_marginEnd="8dp"
         android:layout_marginLeft="8dp"
         android:layout_marginRight="8dp"
         android:layout_marginStart="8dp"
         android:layout_marginTop="28dp"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:hint="Insira sua Senha"
+        android:inputType="textPassword"
         android:textColor="@color/preto"
         android:theme="@style/Theme.AppCompat.Light"
-        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.291"
         app:layout_constraintStart_toEndOf="@+id/SENHA"
-        android:inputType="textPassword"
         app:layout_constraintTop_toBottomOf="@+id/edtNif" />
 
     <Button
